@@ -1,0 +1,171 @@
+---
+const skills = [
+  'TypeScript / JavaScript',
+  'Express, NestJS',
+  'React, Vite, Next.js',
+  'PHP (Laravel, Blade)',
+  'Prisma, Laravel Eloquent',
+  'C, C++, Java, Kotlin, Python, Flutter, C# (Unity)'
+];
+
+const collaboration = [
+  'PHP/Laravel projects, đặc biệt với Laravel Livewire',
+  'Next.js applications sử dụng TanStack Query và TanStack Table',
+  'Command-line tools bằng C++ hoặc Python',
+  'AI / Machine Learning projects'
+];
+---
+
+<html lang="vi">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Mvt1927 | Profile</title>
+    <meta
+      name="description"
+      content="Personal profile site of @Mvt1927: backend, AI, frontend, game development, and modern technologies."
+    />
+    <style>
+      :root {
+        color-scheme: dark;
+        --bg: #09090b;
+        --panel: #18181b;
+        --text: #f4f4f5;
+        --muted: #a1a1aa;
+        --accent: #38bdf8;
+        --border: #27272a;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+        background: radial-gradient(circle at top, #1e293b, var(--bg) 40%);
+        color: var(--text);
+        line-height: 1.6;
+      }
+
+      main {
+        max-width: 920px;
+        margin: 0 auto;
+        padding: 2rem 1rem 3rem;
+        display: grid;
+        gap: 1rem;
+      }
+
+      section {
+        background: color-mix(in oklab, var(--panel) 88%, black);
+        border: 1px solid var(--border);
+        border-radius: 16px;
+        padding: 1.25rem;
+      }
+
+      h1,
+      h2 {
+        line-height: 1.2;
+        margin-top: 0;
+      }
+
+      h1 {
+        margin-bottom: 0.5rem;
+        font-size: clamp(1.8rem, 2vw + 1rem, 2.6rem);
+      }
+
+      h2 {
+        font-size: 1.1rem;
+        margin-bottom: 0.75rem;
+      }
+
+      p {
+        margin: 0;
+        color: var(--muted);
+      }
+
+      ul {
+        margin: 0;
+        padding-left: 1.25rem;
+        color: var(--muted);
+      }
+
+      .links {
+        display: flex;
+        gap: 0.75rem;
+        flex-wrap: wrap;
+        margin-top: 1rem;
+      }
+
+      a {
+        color: var(--accent);
+        text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      .chip-list {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+      }
+
+      .chip-list li {
+        padding: 0.4rem 0.75rem;
+        border: 1px solid var(--border);
+        border-radius: 999px;
+        color: var(--text);
+        background: rgba(255, 255, 255, 0.02);
+      }
+
+      @media (min-width: 800px) {
+        main {
+          padding-top: 3rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <section>
+        <h1>👋 Hi, I’m @Mvt1927</h1>
+        <p>
+          I’m passionate about backend development, Artificial Intelligence (AI), modern frontend,
+          game development, and discovering new technologies.
+        </p>
+        <div class="links">
+          <a href="https://github.com/Mvt1927" target="_blank" rel="noreferrer">GitHub</a>
+          <a href="mailto:viettheog4@gmail.com">Email</a>
+          <a href="https://www.facebook.com/Mvt1927" target="_blank" rel="noreferrer">Facebook</a>
+        </div>
+      </section>
+
+      <section>
+        <h2>🌱 Current learning & technology focus</h2>
+        <p>
+          Strong foundation in OOP, with practical experience across backend/frontend stacks and
+          continuous learning in SQL/database depth.
+        </p>
+        <ul class="chip-list">
+          {skills.map((skill) => <li>{skill}</li>)}
+        </ul>
+      </section>
+
+      <section>
+        <h2>💞️ Open to collaborate</h2>
+        <ul>
+          {collaboration.map((item) => <li>{item}</li>)}
+        </ul>
+      </section>
+
+      <section>
+        <h2>🔗 Other links</h2>
+        <p>LinkedIn: Coming soon.</p>
+      </section>
+    </main>
+  </body>
+</html>
